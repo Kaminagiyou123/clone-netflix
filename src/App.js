@@ -1,11 +1,13 @@
 import "./App.css";
 import Row from "./Row";
 import request from "./request";
+import Banner from "./Banner";
 
 function App() {
   return (
     <div className='App'>
-      <h1> hello world</h1>
+      {/* navbar */}
+      <Banner />
       <Row
         title='NETLIFX ORIGINALS'
         fetchUrl={request.fetchNetflixOriginals}
